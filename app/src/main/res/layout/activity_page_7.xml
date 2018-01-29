@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MediumSeaGreen"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/UrineACR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 26) Urine ACR (mg/dl) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtUrineACR"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mg/dl"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/LipidsHDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 27) Lipids HDL (mg/dl) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtLipidsHDL"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mg/dl"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/LipidsLDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 28) Lipids LDL (mg/dl) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtLipidsLDL"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mg/dl"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/LipidTriglyceride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 29) Lipid Triglyceride (mg/dl) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtLipidTriglyceride"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mg/dl"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Cholesterol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 30) Total Cholesterol (mg/dl) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtCholesterol"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mg/dl"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/TCHDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 31) TC/HDL :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtTCHDL"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingTop="2dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/NonHDL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/GhostWhite"
+            android:text=" 32) Non-HDL(mmol/litre) :"
+            android:fontFamily="serif"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtNonHDL"
+            android:layout_width="180dp"
+            android:paddingBottom="2dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="mmol/litre"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:textColor="@color/Black"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:weightSum="200">
+        <Button
+            android:id="@+id/PreviousP7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&lt; Previous"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:id="@+id/NextP7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Next &gt;"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

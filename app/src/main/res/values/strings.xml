@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">SNStudyApp</string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="Education">
+        <item>No education</item>
+        <item>0 Pre-primary</item>
+        <item>1 Primary</item>
+        <item>2 Lower secondary</item>
+        <item>3 Upper secondary</item>
+        <item>4 Higher secondary</item>
+        <item>6 Bachelors</item>
+        <item>7 Masters</item>
+        <item>8 Doctoral</item>
+        <item>9 Not classified</item>
+    </string-array>
+
+
+    <string-array name="Occupation">
+        <item>0 Not working: Health reason – DR</item>
+        <item>1 Not working:  Health reasons , other</item>
+        <item>2 Not working: Domestic duties</item>
+        <item>3 Not working: retired</item>
+        <item>4 Not working: Looking for job</item>
+        <item>5 Working: Managerial, Professional</item>
+        <item>6 Working: Supervisor, middle level management</item>
+        <item>7 Working: Skilled non-manual</item>
+        <item>8 Working: Skilled Manual</item>
+        <item>9 Working: Un-skilled Manual</item>
+        <item>10 Working: Self-employed Employees 0</item>
+        <item>11 Working: Self-employed Employees 1-9</item>
+        <item>12 Working: Self-employed Employees 10-24</item>
+        <item>13 Working: Self-employed Employees 25+</item>
+    </string-array>
+
+    <string-array name="Smoking">
+        <item>0 Non-smoker</item>
+        <item>1 Former smoker</item>
+        <item>2 Current smoker</item>
+        <item>3 No of cigarettes per day </item>
+    </string-array>
+
+
+    <string-array name="Smoking2">
+        <item>0 No</item>
+        <item>1 Yes</item>
+    </string-array>
+
+
+    <string-array name="PhysicalActivity">
+        <item>0 Sedentary</item>
+        <item>1 Mild Exercise</item>
+        <item>2 Moderate Exercise</item>
+        <item>3 Vigorous or strenuous exercise</item>
+    </string-array>
+
+</resources>

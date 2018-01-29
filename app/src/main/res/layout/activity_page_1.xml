@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:orientation="vertical"
+android:background="@color/MediumSeaGreen"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:paddingTop="1dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/Occupation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="4) Occupation:"
+        android:textColor="@color/GhostWhite"
+        android:fontFamily="serif"
+        android:textSize="30sp" />
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton android:id="@+id/Occupation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0. Not working: Health reason – DR "
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Not working:  Health reasons, other"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Not working: Domestic duties"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Not working: retired"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. Not working: Looking for job"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. Working: Managerial, Professional"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6. Working: Supervisor, middle level management"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7. Working: Skilled non-manual"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8. Working: Skilled Manual"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9.Working: Un-skilled Manual"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10. Working: Self-employed Employees 0"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11. Working: Self-employed Employees 1-9"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+        <RadioButton android:id="@+id/Occupation13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12. Working: Self-employed Employees 10-24"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+
+        <RadioButton android:id="@+id/Occupation14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13. Working: Self-employed Employees 25+"
+            android:paddingBottom="1dp"
+            android:paddingLeft="7dp"
+            android:layout_marginTop="5dp"
+            />
+    </RadioGroup>
+</LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:paddingTop="1dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/Income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/GhostWhite"
+        android:text="5) Average Monthly Income:"
+        android:fontFamily="serif"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/TxtIncome"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/Black"
+        android:inputType="number"
+        android:paddingBottom="1dp"
+        android:background="@drawable/background"
+        android:hint="INR"
+        android:layout_marginTop="15dp"
+        android:foregroundTint="@color/colorPrimaryDark"
+        android:textAlignment="center" />
+
+</LinearLayout>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:weightSum="200">
+    <Button
+        android:id="@+id/PreviousP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="&lt; Previous"
+        android:layout_gravity="left"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/NextP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Next &gt;"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
+
+</LinearLayout>
