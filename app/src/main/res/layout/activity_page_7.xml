@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="@color/MediumSeaGreen"
+    android:background="@color/LightBlack"
     android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
             android:hint="mg/dl"
             android:layout_marginTop="15dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -43,7 +43,7 @@
             android:id="@+id/LipidsHDL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 27) Lipids HDL (mg/dl) :"
             android:fontFamily="serif"
@@ -57,9 +57,9 @@
             android:ems="10"
             android:inputType="number"
             android:hint="mg/dl"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -74,7 +74,7 @@
             android:id="@+id/LipidsLDL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 28) Lipids LDL (mg/dl) :"
             android:fontFamily="serif"
@@ -88,9 +88,9 @@
             android:ems="10"
             android:inputType="number"
             android:hint="mg/dl"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -104,7 +104,7 @@
             android:id="@+id/LipidTriglyceride"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 29) Lipid Triglyceride (mg/dl) :"
             android:fontFamily="serif"
@@ -120,7 +120,7 @@
             android:hint="mg/dl"
             android:layout_marginTop="15dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -135,7 +135,7 @@
             android:id="@+id/Cholesterol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 30) Total Cholesterol (mg/dl) :"
             android:fontFamily="serif"
@@ -149,9 +149,9 @@
             android:ems="10"
             android:inputType="number"
             android:hint="mg/dl"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -165,7 +165,7 @@
             android:id="@+id/TCHDL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 31) TC/HDL :"
             android:fontFamily="serif"
@@ -178,9 +178,9 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
@@ -195,7 +195,7 @@
             android:id="@+id/NonHDL"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:textColor="@color/GhostWhite"
             android:text=" 32) Non-HDL(mmol/litre) :"
             android:fontFamily="serif"
@@ -209,9 +209,9 @@
             android:ems="10"
             android:inputType="number"
             android:hint="mmol/litre"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/background"
-            android:textColor="@color/Black"
+            android:textColor="@color/White"
             android:foregroundTint="@color/colorPrimaryDark"
             android:textAlignment="center" />
 
