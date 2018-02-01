@@ -1,299 +1,318 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/LightBlack"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/ParentalHistoryofHeartattack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 18) Parental history of heart attack :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/ParentalHistoryofHeartattackNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-
-            <RadioButton android:id="@+id/ParentalHistoryofHeartattackYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/Height"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 19) Height(cms) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtHeight"
-            android:layout_width="180dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="cms"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/Weight"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 20) Weight(kgs) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/Txtweight"
-            android:layout_width="180dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="kgs"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/waist"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 21) Waist circumference (cms) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtWaist"
-            android:layout_width="120dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="cms"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/Hip"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 22) Hip circumference (cms) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtHip"
-            android:layout_width="140dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="cms"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/BloodpressureSystolic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 23) Blood pressure systolic (mm Hg) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtBloodpressureSystolic"
-            android:layout_width="180dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginLeft="40dp"
-            android:inputType="number"
-            android:hint="mm Hg"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/BloodpressureDiastolic"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 24) Blood pressure diastolic (mm Hg) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtBloodpressureDiastolic"
-            android:layout_width="180dp"
-            android:paddingBottom="2dp"
-            android:layout_marginLeft="40dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="mm Hg"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/HbA1c"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 25) HbA1c (%) :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtHbA1c"
-            android:layout_width="180dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="%"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-
-    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:weightSum="200">
-        <Button
-            android:id="@+id/PreviousP6"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/ParentalHistoryofHeartattack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:text=" 18) Parental history of heart attack :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ParentalHistoryofHeartattackNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. No"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/ParentalHistoryofHeartattackYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. yes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/Height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 19) Height(cms) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtHeight"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="cms"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/Weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 20) Weight(kgs) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/Txtweight"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="kgs"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/waist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 21) Waist circumference (cms) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtWaist"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="cms"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/Hip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 22) Hip circumference (cms) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtHip"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="cms"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/BloodpressureSystolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 23) Blood pressure systolic (mm Hg) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtBloodpressureSystolic"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="mm Hg"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/BloodpressureDiastolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 24) Blood pressure diastolic (mm Hg) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtBloodpressureDiastolic"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="mm Hg"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/HbA1c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 25) HbA1c (%) :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtHbA1c"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="%"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="&lt; Previous"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"/>
+            android:clickable="true"
+            android:focusable="true"
+            android:weightSum="200">
 
-        <Button
-            android:id="@+id/NextP6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Next &gt;"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
+            <Button
+                android:id="@+id/PreviousP6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:text="&lt; Previous" />
 
+            <Button
+                android:id="@+id/NextP6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="Next &gt;" />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

@@ -1,297 +1,323 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/LightBlack"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
-    <android.support.v7.widget.LinearLayoutCompat
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/Cardiovascular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 13) Cardiovascular disease:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
 
-        <CheckBox android:id="@+id/TxtCardiovascular1"
+        <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            android:text="1. None"
-            />
-        <CheckBox android:id="@+id/TxtCardiovascular2"
-            android:layout_width="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Cardiovascular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:text=" 13) Cardiovascular disease:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <CheckBox
+                android:id="@+id/TxtCardiovascular1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="1. None"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtCardiovascular2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="2. Hypertension"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtCardiovascular3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="3. Myocardial infarction"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtCardiovascular4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="4. Heart failure"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtCardiovascular5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="5. Stroke"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            android:text="2. Hypertension"
-            />
-        <CheckBox android:id="@+id/TxtCardiovascular3"
-            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/BloodpressureA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 14) Blood pressure medications :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtBloodpressureA"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="Medication"
+                android:inputType="textPersonName"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            android:text="3. Myocardial infarction"
-            />
-        <CheckBox android:id="@+id/TxtCardiovascular4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            android:text="4. Heart failure"
-            />
-        <CheckBox android:id="@+id/TxtCardiovascular5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            android:text="5. Stroke"
-            />
-    </android.support.v7.widget.LinearLayoutCompat>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/BloodpressureA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 14) Blood pressure medications :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
+            android:orientation="horizontal"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/Statin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 15) Statin Use :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/StatinNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. No"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/StatinYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. yes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
 
         <EditText
-            android:id="@+id/TxtBloodpressureA"
+            android:id="@+id/TxtstatinA"
             android:layout_width="180dp"
-            android:paddingBottom="2dp"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Medication"
-            android:layout_marginTop="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/background"
-            android:textColor="@color/White"
+            android:ems="10"
             android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
+            android:hint="Statin Used"
+            android:inputType="textPersonName"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <TextView
-            android:id="@+id/Statin"
+        <android.support.v7.widget.LinearLayoutCompat
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 15) Statin Use :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/StatinNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-
-            <RadioButton android:id="@+id/StatinYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-        </RadioGroup>
-
-    </LinearLayout>
-
-    <EditText
-        android:id="@+id/TxtstatinA"
-        android:layout_width="180dp"
-        android:paddingBottom="2dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:layout_marginLeft="40dp"
-        android:inputType="textPersonName"
-        android:hint="Statin Used"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/background"
-        android:textColor="@color/White"
-        android:foregroundTint="@color/colorPrimaryDark"
-        android:textAlignment="center"/>
-
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/OcularHistory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 16) Ocular History:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <CheckBox android:id="@+id/TxtOcularHistory1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1. None"
-            android:textSize="20sp"
-            android:layout_marginLeft="40dp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            />
-        <CheckBox android:id="@+id/TxtOcularHistory2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:text="2.  Cataract Present"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            />
-        <CheckBox android:id="@+id/TxtOcularHistory3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:text="3. Cataract Surgery done"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            />
-        <CheckBox android:id="@+id/TxtOcularHistory4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="4. Glaucoma"
-            android:textSize="20sp"
-            android:layout_marginLeft="40dp"
-            android:textColor="@color/WhiteSmoke"
-            android:buttonTint="@color/White"
-            />
-    </android.support.v7.widget.LinearLayoutCompat>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/ParentalDiabeticHistory"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 17) Parental history of diabetes :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
             android:orientation="vertical">
-            <RadioButton android:id="@+id/TxtParentalDiabeticHistory1"
+
+            <TextView
+                android:id="@+id/OcularHistory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:text="1. Both parents non-diabetic"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 16) Ocular History:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
 
-            <RadioButton android:id="@+id/TxtParentalDiabeticHistory2"
+            <CheckBox
+                android:id="@+id/TxtOcularHistory1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
+                android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="2. One of the parents is diabetic"
-                android:paddingBottom="2dp"
-                android:textSize="20sp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:text="1. None"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
 
-            <RadioButton android:id="@+id/TxtParentalDiabeticHistory3"
+            <CheckBox
+                android:id="@+id/TxtOcularHistory2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
+                android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="3. Both parents diabeticyes"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:text="2.  Cataract Present"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
 
-        </RadioGroup>
+            <CheckBox
+                android:id="@+id/TxtOcularHistory3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="3. Cataract Surgery done"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtOcularHistory4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="4. Glaucoma"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/ParentalDiabeticHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text=" 17) Parental history of diabetes :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/TxtParentalDiabeticHistory1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. Both parents non-diabetic"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/TxtParentalDiabeticHistory2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="2. One of the parents is diabetic"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/TxtParentalDiabeticHistory3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="3. Both parents diabeticyes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:weightSum="200">
+
+            <Button
+                android:id="@+id/PreviousP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:text="&lt; Previous" />
+
+            <Button
+                android:id="@+id/NextP5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="Next &gt;" />
+        </RelativeLayout>
     </LinearLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:weightSum="200">
-        <Button
-            android:id="@+id/PreviousP5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="&lt; Previous"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"/>
-
-        <Button
-            android:id="@+id/NextP5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Next &gt;"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
-
 </LinearLayout>

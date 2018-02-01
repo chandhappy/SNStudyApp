@@ -1,276 +1,306 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/LightBlack"
-    android:layout_height="match_parent">
-    <LinearLayout
+    android:orientation="vertical">
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/Smoking"
+        android:layout_height="match_parent">
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:text="6) Smoking:"
-            android:textColor="@color/GhostWhite"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
             android:orientation="vertical">
-            <RadioButton android:id="@+id/Smokingtxt1"
-                android:layout_width="wrap_content"
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0. Non-smoker"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:orientation="vertical"
+                android:paddingTop="2dp">
 
-            <RadioButton android:id="@+id/Smokingtxt2"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/Smoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:text="6) Smoking:"
+                    android:textColor="@color/GhostWhite"
+                    android:textSize="30sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/RadioGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="40dp">
+
+                    <RadioButton
+                        android:id="@+id/Smokingtxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="0. Non-smoker"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/Smokingtxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="1. Former smoker"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/Smokingtxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:onClick="onRadioButtonClicked"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="2. Current smoker"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                </RadioGroup>
+
+
+                <EditText
+                    android:id="@+id/TxtSmoking1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/background"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:foregroundTint="@color/colorPrimaryDark"
+                    android:hint="COUNT"
+                    android:inputType="number"
+                    android:paddingBottom="2dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/White" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. Former smoker"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:orientation="vertical"
 
-            <RadioButton android:id="@+id/Smokingtxt3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2. Current smoker"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp" />
+                android:paddingTop="2dp">
 
-        </RadioGroup>
-
-
-        <EditText
-            android:id="@+id/TxtSmoking1"
-            android:layout_width="140dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="40dp"
-            android:background="@drawable/background"
-            android:ems="10"
-            android:enabled="false"
-            android:focusable="false"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:hint="COUNT"
-            android:inputType="number"
-            android:paddingBottom="2dp"
-            android:textAlignment="center"
-            android:textColor="@color/White" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/SecondSmoking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:text="7) Second hand Smoke exposure
+                <TextView
+                    android:id="@+id/SecondSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="serif"
+                    android:text="7) Second hand Smoke exposure
 for one or more hours per week:"
-            android:textColor="@color/GhostWhite"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
+                    android:textColor="@color/GhostWhite"
+                    android:textSize="30sp" />
 
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/SecondSmokingNo"
-                android:layout_width="wrap_content"
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <RadioButton
+                        android:id="@+id/SecondSmokingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="0. No"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/SecondSmokingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="1. yes"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:orientation="vertical"
+                android:paddingTop="2dp">
 
-            <RadioButton android:id="@+id/SecondSmokingYes"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/PhysicalActivity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="serif"
+                    android:text="8) Physical Activity:"
+                    android:textColor="@color/GhostWhite"
+                    android:textSize="30sp" />
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="40dp">
+
+                    <RadioButton
+                        android:id="@+id/PhysicalActivitytxt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="0. Sedentary"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/PhysicalActivitytxt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="1. Mild Exercise"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/PhysicalActivitytxt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="2. Moderate Exercise"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/PhysicalActivitytxt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="3. Vigorous or strenuous exercise"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
+                android:orientation="vertical"
+                android:paddingTop="2dp">
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/PhysicalActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text="8) Physical Activity:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="vertical">
-            <RadioButton android:id="@+id/PhysicalActivitytxt1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0. Sedentary"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/PhysicalActivitytxt2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. Mild Exercise"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/PhysicalActivitytxt3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2. Moderate Exercise"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/PhysicalActivitytxt4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3. Vigorous or strenuous exercise"
-                android:textColor="@color/WhiteSmoke"
-                android:textSize="20sp"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/Stress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text="9) Several periods of stress
+                <TextView
+                    android:id="@+id/Stress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="serif"
+                    android:text="9) Several periods of stress
 or permanent stress in the last year:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
+                    android:textColor="@color/GhostWhite"
+                    android:textSize="30sp" />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/StressNo"
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="40dp">
+
+                    <RadioButton
+                        android:id="@+id/StressNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="0. No"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+
+                    <RadioButton
+                        android:id="@+id/StressYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:buttonTint="@color/White"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="7dp"
+                        android:text="1. yes"
+                        android:textColor="@color/WhiteSmoke"
+                        android:textSize="20sp" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
+                android:clickable="true"
+                android:focusable="true"
+                android:weightSum="200">
 
-            <RadioButton android:id="@+id/StressYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
+                <Button
+                    android:id="@+id/PreviousP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="left"
+                    android:text="&lt; Previous" />
 
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:weightSum="200">
-        <Button
-            android:id="@+id/PreviousP2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="&lt; Previous"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"/>
-
-        <Button
-            android:id="@+id/NextP2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Next &gt;"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
+                <Button
+                    android:id="@+id/NextP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:text="Next &gt;" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

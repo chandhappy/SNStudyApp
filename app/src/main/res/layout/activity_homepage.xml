@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightBlack"
+    android:orientation="vertical"
+    tools:context="com.example.incbasha.snstudyapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/DDCCHHPP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:paddingBottom="2dp"
+            android:text=" DD CCHH PP :"
+            android:textColor="@color/GhostWhite"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/DD"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:ems="10"
+            android:foregroundTint="@color/GhostWhite"
+            android:hint="DD"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+
+        <EditText
+            android:id="@+id/CCHH"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/background"
+            android:ems="4"
+            android:foregroundTint="@color/GhostWhite"
+            android:hint="CCHH"
+            android:inputType="number"
+            android:maxLength="4"
+
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+
+        <EditText
+            android:id="@+id/PP"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/background"
+            android:ems="2"
+            android:layout_marginLeft="20dp"
+            android:foregroundTint="@color/GhostWhite"
+            android:hint="PP"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="1) Age:"
+            android:textColor="@color/GhostWhite"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/TxtAge"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_toLeftOf="@+id/Age"
+            android:background="@drawable/background"
+            android:ems="3"
+            android:foregroundTint="@color/colorPrimaryDark"
+            android:hint="AGE"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingBottom="2dp"
+            android:textAlignment="center"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="2) Gender:"
+            android:textColor="@color/GhostWhite"
+            android:textSize="30sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/GenderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="59dp"
+                android:buttonTint="@color/White"
+                android:checked="true"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="Male"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+            <!-- android:onClick="onRadioButtonClicked" -->
+            />
+
+            <RadioButton
+                android:id="@+id/GenderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="59dp"
+                android:buttonTint="@color/White"
+                android:checked="false"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="Female"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+            <!--  android:onClick="onRadioButtonClicked"-->
+            />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="2dp">
+
+        <TextView
+            android:id="@+id/Education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="3) Highest Level of Education:"
+            android:textColor="@color/GhostWhite"
+            android:textSize="30sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/Education1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="0. No Education"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="1. Pre-primary"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="2. Primary"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="3. Lower Secondary"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="4. Upper Secondary"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="5. Higher Secondary"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="6. Bachelor’s degree"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="7. Master’s degree"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="8. Doctoral"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/Education10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:buttonTint="@color/White"
+                android:paddingBottom="2dp"
+                android:paddingLeft="7dp"
+                android:text="9. Not Classified"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/PreviousP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="left"
+            android:text="&lt; Previous" />
+
+        <Button
+            android:id="@+id/NextP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="Next >" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+

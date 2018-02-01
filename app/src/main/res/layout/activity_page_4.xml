@@ -1,256 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/LightBlack"
-    android:layout_height="match_parent">
+    android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/DiabetestypeA"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 12a) Duration of diabetes since diagnosis :"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/TxtDiabetestypeA"
-            android:layout_width="100dp"
-            android:paddingBottom="2dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:hint="Years"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="40dp"
-            android:background="@drawable/background"
-            android:textColor="@color/White"
-            android:foregroundTint="@color/colorPrimaryDark"
-            android:textAlignment="center" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/DiabetestypeB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 12b) Treatment of Diabetes Mellitus:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="vertical">
-            <RadioButton android:id="@+id/DiabetesMellitusB1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="0. None / Diet controlled"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/DiabetesMellitusB2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="1. Oral hypoglycaemic agents only"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/DiabetesMellitusB3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="2. Insulin only"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/DiabetesMellitusB4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="3. Both insulin and oral hypoglycaemic agent"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/ComplicationsDiabetestypeB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/GhostWhite"
-            android:text=" 12c) Complications of diabetes mellitus:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-
-            android:orientation="vertical">
-            <RadioButton android:id="@+id/ComplicationsDiabetesMellitusB1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. None "
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/ComplicationsDiabetesMellitusB2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:text="2. Chronic kidney disease"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/ComplicationsDiabetesMellitusB3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:textSize="20sp"
-                android:text="3. Peripheral neuropathy(diabetic foot)"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/ComplicationsDiabetesMellitusB4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:text="4. Diabetic retinopathy"
-                android:textSize="20sp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/PreviousDiabetestype"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:textColor="@color/GhostWhite"
-            android:text="12d) Previous Treatment for Diabetic retinopathy"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:paddingLeft="40dp"
-
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/PreviousDiabetestypeNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:textSize="20sp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-
-            <RadioButton android:id="@+id/PreviousDiabetestypeYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:textSize="20sp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="5dp"
-                />
-        </RadioGroup>
-
-    </LinearLayout>
-
-    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:weightSum="200">
-        <Button
-            android:id="@+id/PreviousP4"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/DiabetestypeA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif"
+                android:text=" 12a) Duration of diabetes since diagnosis :"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/TxtDiabetestypeA"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background"
+                android:ems="10"
+                android:foregroundTint="@color/colorPrimaryDark"
+                android:hint="Years"
+                android:inputType="number"
+                android:paddingBottom="2dp"
+                android:textAlignment="center"
+                android:textColor="@color/White" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/DiabetestypeB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif"
+                android:text=" 12b) Treatment of Diabetes Mellitus:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40dp">
+
+                <RadioButton
+                    android:id="@+id/DiabetesMellitusB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. None / Diet controlled"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/DiabetesMellitusB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. Oral hypoglycaemic agents only"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/DiabetesMellitusB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="2. Insulin only"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/DiabetesMellitusB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="3. Both insulin and oral hypoglycaemic agent"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/ComplicationsDiabetestypeB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif"
+                android:text=" 12c) Complications of diabetes mellitus:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/ComplicationsDiabetesMellitusB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. None "
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/ComplicationsDiabetesMellitusB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="2. Chronic kidney disease"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/ComplicationsDiabetesMellitusB3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="3. Peripheral neuropathy(diabetic foot)"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/ComplicationsDiabetesMellitusB4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="4. Diabetic retinopathy"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/PreviousDiabetestype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:fontFamily="serif"
+                android:text="12d) Previous Treatment for Diabetic retinopathy"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <RadioButton
+                    android:id="@+id/PreviousDiabetestypeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. No"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/PreviousDiabetestypeYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. yes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="&lt; Previous"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"/>
+            android:clickable="true"
+            android:focusable="true"
+            android:weightSum="200">
 
-        <Button
-            android:id="@+id/NextP4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Next &gt;"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
+            <Button
+                android:id="@+id/PreviousP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:text="&lt; Previous" />
 
+            <Button
+                android:id="@+id/NextP4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="Next &gt;" />
+        </RelativeLayout>
+    </LinearLayout>
 </LinearLayout>

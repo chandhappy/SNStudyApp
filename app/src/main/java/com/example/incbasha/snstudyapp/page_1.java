@@ -1,6 +1,8 @@
 package com.example.incbasha.snstudyapp;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +12,7 @@ import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class page_1 extends AppCompatActivity {
-
+    public static final String PREFS_NAME = "AOP_PREFS";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,7 +24,8 @@ public class page_1 extends AppCompatActivity {
                 // Salary
                 EditText Sal = (EditText) findViewById(R.id.TxtIncome);
                 String Salary = Sal.getText().toString();
-
+                SharedPreferences settings = getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = settings.edit();
                 // Occupation
                 RadioButton  Occupation1 = (RadioButton) findViewById(R.id.Occupation1);
                 RadioButton  Occupation2 = (RadioButton) findViewById(R.id.Occupation2);
@@ -82,7 +85,7 @@ public class page_1 extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                Intent i = new Intent(page_1.this,MainActivity.class) ;
+                Intent i = new Intent(page_1.this,homepage.class) ;
                 startActivity(i);
             }
         });

@@ -1,191 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     android:background="@color/LightBlack"
-    android:layout_height="match_parent">
-
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
         android:orientation="vertical">
-        <TextView
-            android:id="@+id/depressed"
-            android:layout_width="wrap_content"
+
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textColor="@color/GhostWhite"
-            android:text="10) In the last year, was there a time
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/depressed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:text="10) In the last year, was there a time
 when you felt sad, blue or depressed
 for two weeks or more in a row:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <RadioButton
+                    android:id="@+id/DepressedNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. No"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/DepressedYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. yes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/DepressedNo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Diet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text="11) Diet:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
 
-            <RadioButton android:id="@+id/DepressedYes"
+            <CheckBox
+                android:id="@+id/TxtDiet1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
+                android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-        </RadioGroup>
+                android:text="0. Salty food or snacks one or more times a day"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
 
+            <CheckBox
+                android:id="@+id/TxtDiet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="1. Deep fried foods or snacks or fast foods 3 or more times per week 2"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtDiet3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="2. Eat fruit less than once per day"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtDiet4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="3. Eat vegetables less than once per day"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/TxtDiet5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:buttonTint="@color/White"
+                android:text="4. Eat meat and / or poultry 2 or more times daily"
+                android:textColor="@color/WhiteSmoke"
+                android:textSize="20sp" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/Diabetestype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="serif"
+                android:text="12) Diabetes Type 2:"
+                android:textColor="@color/GhostWhite"
+                android:textSize="30sp" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <RadioButton
+                    android:id="@+id/DiabetestypeNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="0. No"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+
+                <RadioButton
+                    android:id="@+id/DiabetestypeYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="19dp"
+                    android:buttonTint="@color/White"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="7dp"
+                    android:text="1. yes"
+                    android:textColor="@color/WhiteSmoke"
+                    android:textSize="20sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:weightSum="200">
+
+            <Button
+                android:id="@+id/PreviousP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="left"
+                android:text="&lt; Previous" />
+
+            <Button
+                android:id="@+id/NextP3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:text="Next &gt;" />
+        </RelativeLayout>
     </LinearLayout>
-    <android.support.v7.widget.LinearLayoutCompat
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/Diet"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text="11) Diet:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-
-        <CheckBox android:id="@+id/TxtDiet1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/WhiteSmoke"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:buttonTint="@color/White"
-            android:text="0. Salty food or snacks one or more times a day"
-            />
-        <CheckBox android:id="@+id/TxtDiet2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/WhiteSmoke"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:buttonTint="@color/White"
-            android:text="1. Deep fried foods or snacks or fast foods 3 or more times per week 2"
-            />
-        <CheckBox android:id="@+id/TxtDiet3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/WhiteSmoke"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:buttonTint="@color/White"
-            android:text="2. Eat fruit less than once per day"
-            />
-        <CheckBox android:id="@+id/TxtDiet4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/WhiteSmoke"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:buttonTint="@color/White"
-            android:text="3. Eat vegetables less than once per day"
-            />
-        <CheckBox android:id="@+id/TxtDiet5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/WhiteSmoke"
-            android:layout_marginLeft="40dp"
-            android:textSize="20sp"
-            android:buttonTint="@color/White"
-            android:text="4. Eat meat and / or poultry 2 or more times daily"
-            />
-    </android.support.v7.widget.LinearLayoutCompat>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:paddingTop="2dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/Diabetestype"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:textColor="@color/GhostWhite"
-            android:text="12) Diabetes Type 2:"
-            android:fontFamily="serif"
-            android:textSize="30sp" />
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:paddingLeft="40dp"
-            android:orientation="horizontal">
-            <RadioButton android:id="@+id/DiabetestypeNo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0. No"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-
-            <RadioButton android:id="@+id/DiabetestypeYes"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1. yes"
-                android:textSize="20sp"
-                android:textColor="@color/WhiteSmoke"
-                android:buttonTint="@color/White"
-                android:paddingBottom="2dp"
-                android:paddingLeft="7dp"
-                android:layout_marginTop="19dp"
-                />
-        </RadioGroup>
-
-    </LinearLayout>
-
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:focusable="true"
-        android:weightSum="200">
-        <Button
-            android:id="@+id/PreviousP3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="&lt; Previous"
-            android:layout_gravity="left"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentBottom="true"/>
-
-        <Button
-            android:id="@+id/NextP3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:text="Next &gt;"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
-
 </LinearLayout>

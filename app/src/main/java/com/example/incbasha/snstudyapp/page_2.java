@@ -1,6 +1,7 @@
 package com.example.incbasha.snstudyapp;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -27,8 +28,9 @@ public class page_2 extends AppCompatActivity {
                 RadioButton Smokingtxt2 = (RadioButton) findViewById(R.id.Smokingtxt2);
                 RadioButton Smokingtxt3 = (RadioButton) findViewById(R.id.Smokingtxt3);
                 EditText CigarCount = (EditText) findViewById(R.id.TxtSmoking1);
+
                 String Smoking = "";
-                CigarCount.setFocusable(false);
+              /*  CigarCount.setFocusable(false);
                 CigarCount.setEnabled(false);
                 CigarCount.setCursorVisible(false);
                 CigarCount.setKeyListener(null);
@@ -50,7 +52,7 @@ public class page_2 extends AppCompatActivity {
                     CigarCount.setEnabled(true);
                     CigarCount.setCursorVisible(true);
                 }
-
+*/
                 ////Secondhandsmoke
                 RadioButton SecondSmokingNo = (RadioButton) findViewById(R.id.SecondSmokingNo);
                 RadioButton SecondSmokingYes = (RadioButton) findViewById(R.id.SecondSmokingYes);
@@ -112,4 +114,53 @@ public class page_2 extends AppCompatActivity {
 
     }
 
+    public void onRadioButtonClicked(View v)
+    {
+        //require to import the RadioButton class
+        RadioButton rb1 = (RadioButton) findViewById(R.id.Smokingtxt1);
+        RadioButton rb2 = (RadioButton) findViewById(R.id.Smokingtxt2);
+        RadioButton rb3 = (RadioButton) findViewById(R.id.Smokingtxt3);
+
+        //is the current radio button now checked?
+        boolean  checked = ((RadioButton) v).isChecked();
+
+        //now check which radio button is selected
+        //android switch statement
+        switch(v.getId()){
+
+            case R.id.Smokingtxt1:
+                if(checked)
+                    //if windows phone programming book is selected
+                    //set the checked radio button's text style bold italic
+                    rb1.setTypeface(null, Typeface.BOLD_ITALIC);
+                //set the other two radio buttons text style to default
+                rb2.setTypeface(null, Typeface.NORMAL);
+                // reqire to import Typeface class
+                rb3.setTypeface(null, Typeface.NORMAL);
+                break;
+
+            case R.id.Smokingtxt2:
+                if(checked)
+                   //if ios programming book is selected
+                    //set the checked radio button's text style bold italic
+                    rb2.setTypeface(null, Typeface.BOLD_ITALIC);
+                //set the other two radio buttons text style to default
+                rb1.setTypeface(null, Typeface.NORMAL);
+                rb3.setTypeface(null, Typeface.NORMAL);
+                break;
+
+            case R.id.Smokingtxt3:
+                if(checked)
+                    //if android programming book is selected
+                    //set the checked radio button's text style bold italic
+                    rb3.setTypeface(null, Typeface.BOLD_ITALIC);
+                //set the other two radio buttons text style to default
+                rb1.setTypeface(null, Typeface.NORMAL);
+                rb2.setTypeface(null, Typeface.NORMAL);
+                CigarCount.setFocusable(true);
+                CigarCount.setEnabled(true);
+                CigarCount.setCursorVisible(true);
+                break;
+        }
+    }
 }
