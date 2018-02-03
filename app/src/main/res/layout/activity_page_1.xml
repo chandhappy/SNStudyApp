@@ -31,6 +31,7 @@
 
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/OccupationRadioGroup"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
@@ -44,7 +45,7 @@
                     android:buttonTint="@color/White"
                     android:paddingBottom="1dp"
                     android:paddingLeft="7dp"
-                    android:text="0. Not working: Health reason – DR "
+                    android:text="0. Not working: Health reason – DR"
                     android:textColor="@color/WhiteSmoke"
                     android:textSize="20sp" />
 
@@ -220,7 +221,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
                 android:fontFamily="serif"
-                android:text="5) Average Monthly Income:"
+                android:text="5) Average Monthly Income (INR):"
                 android:textColor="@color/GhostWhite"
                 android:textSize="30sp" />
 

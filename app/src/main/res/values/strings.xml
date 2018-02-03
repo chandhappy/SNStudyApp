@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">SNStudyApp</string>
-
+    <string name="Diet_op0">0. Salty food or snacks one or more times a day</string>
+    <string name="Diet_op1">1. Deep fried foods or snacks or fast foods 3 or more times per week</string>
+    <string name="Diet_op2">2. Eat fruits less than once per day</string>
+    <string name="Diet_op3">3. Eat vegetables less than once per day</string>
+    <string name="Diet_op4">4. Eat meat and / or poultry 2 or more times daily</string>
     <string-array name="Gender">
         <item>Male</item>
         <item>Female</item>

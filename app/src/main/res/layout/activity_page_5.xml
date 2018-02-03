@@ -130,6 +130,7 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/StatinRdBtnGrp"
                 android:layout_marginTop="40dp"
                 android:orientation="horizontal">
 
@@ -139,6 +140,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="19dp"
                     android:buttonTint="@color/White"
+                    android:onClick="onRadioButtonClicked"
                     android:paddingBottom="2dp"
                     android:paddingLeft="7dp"
                     android:text="0. No"
@@ -151,9 +153,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="19dp"
                     android:buttonTint="@color/White"
+                    android:onClick="onRadioButtonClicked"
                     android:paddingBottom="2dp"
                     android:paddingLeft="7dp"
-                    android:text="1. yes"
+                    android:text="1. Yes"
                     android:textColor="@color/WhiteSmoke"
                     android:textSize="20sp" />
             </RadioGroup>
@@ -170,6 +173,7 @@
             android:ems="10"
             android:foregroundTint="@color/colorPrimaryDark"
             android:hint="Statin Used"
+            android:visibility="invisible"
             android:inputType="textPersonName"
             android:paddingBottom="2dp"
             android:textAlignment="center"
@@ -206,7 +210,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="2.  Cataract Present"
+                android:text="2. Cataract Present"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
 
@@ -250,6 +254,7 @@
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/ParentalDiabeticHistoryRdBtnGrp"
                 android:layout_marginLeft="40dp"
                 android:orientation="vertical">
 
@@ -285,7 +290,7 @@
                     android:buttonTint="@color/White"
                     android:paddingBottom="2dp"
                     android:paddingLeft="7dp"
-                    android:text="3. Both parents diabeticyes"
+                    android:text="3. Both parents diabetic yes"
                     android:textColor="@color/WhiteSmoke"
                     android:textSize="20sp" />
 

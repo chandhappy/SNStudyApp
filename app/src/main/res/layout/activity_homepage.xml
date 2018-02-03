@@ -135,6 +135,7 @@
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:id="@+id/GenderRdBtnGrp"
             android:orientation="horizontal">
 
             <RadioButton
@@ -187,6 +188,7 @@
             android:textSize="30sp" />
 
         <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/EducationRdBtnGrp"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="40dp"
@@ -200,6 +202,7 @@
                 android:buttonTint="@color/White"
                 android:paddingBottom="2dp"
                 android:paddingLeft="7dp"
+                android:checked="true"
                 android:text="0. No Education"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />

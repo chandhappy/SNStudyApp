@@ -62,7 +62,7 @@
             android:background="@mipmap/cloud"
             android:fontFamily="serif"
             android:paddingLeft="30dp"
-            android:text="Sync"
+            android:text="Upload"
             android:textAlignment="textStart"
             android:textSize="40dp"
             android:textStyle="bold">

@@ -33,6 +33,7 @@ for two weeks or more in a row:"
 
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
+                android:id="@+id/DepressedRdGrp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingLeft="40dp">
@@ -57,7 +58,7 @@ for two weeks or more in a row:"
                     android:buttonTint="@color/White"
                     android:paddingBottom="2dp"
                     android:paddingLeft="7dp"
-                    android:text="1. yes"
+                    android:text="1. Yes"
                     android:textColor="@color/WhiteSmoke"
                     android:textSize="20sp" />
             </RadioGroup>
@@ -85,7 +86,7 @@ for two weeks or more in a row:"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="0. Salty food or snacks one or more times a day"
+                android:text="@string/Diet_op0"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
 
@@ -95,7 +96,7 @@ for two weeks or more in a row:"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="1. Deep fried foods or snacks or fast foods 3 or more times per week 2"
+                android:text="@string/Diet_op1"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
 
@@ -105,7 +106,7 @@ for two weeks or more in a row:"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="2. Eat fruit less than once per day"
+                android:text="@string/Diet_op2"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
 
@@ -115,7 +116,7 @@ for two weeks or more in a row:"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="3. Eat vegetables less than once per day"
+                android:text="@string/Diet_op3"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
 
@@ -125,7 +126,7 @@ for two weeks or more in a row:"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
                 android:buttonTint="@color/White"
-                android:text="4. Eat meat and / or poultry 2 or more times daily"
+                android:text="@string/Diet_op4"
                 android:textColor="@color/WhiteSmoke"
                 android:textSize="20sp" />
         </android.support.v7.widget.LinearLayoutCompat>
@@ -149,6 +150,7 @@ for two weeks or more in a row:"
             <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/DiabetestypesRdGrp"
                 android:orientation="horizontal"
                 android:paddingLeft="40dp">
 
@@ -172,7 +174,7 @@ for two weeks or more in a row:"
                     android:buttonTint="@color/White"
                     android:paddingBottom="2dp"
                     android:paddingLeft="7dp"
-                    android:text="1. yes"
+                    android:text="1. Yes"
                     android:textColor="@color/WhiteSmoke"
                     android:textSize="20sp" />
             </RadioGroup>
